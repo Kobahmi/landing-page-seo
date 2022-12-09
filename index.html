@@ -9,9 +9,9 @@
   <body>
     <section class="relative">
       <nav
-        class="fixed top-0 h-[5rem] flex flex-col z-20 bg-gray-50 p-5 w-full border-b border-gray-200 md:border-0 md:flex-row md:justify-between md:items-center md:bg-white"
+        class="fixed top-0 h-[5rem] flex flex-col z-20 bg-gray-50 py-5 w-full border-b border-gray-200 md:border-0 md:flex-row md:justify-between md:items-center md:bg-white"
       >
-        <div class="flex justify-between">
+        <div class="flex justify-between px-5">
           <img class="w-10" src="./ressources/RocketLogo.svg" alt="logo" />
 
           <button class="icon-toggle md:hidden">
@@ -20,23 +20,25 @@
         </div>
 
         <ul class="toggle-menu hidden gap-8 text-lg text-center md:flex">
-          <li class="py-5 mt-5 md:mt-0">
+          <li class="py-5 mt-5 bg-white md:mt-0">
             <a href="#">Accueil</a>
           </li>
-          <li class="py-5 border-t border-gray-200 md:border-0">
+          <li class="py-5 bg-white border-t border-gray-200 md:border-0">
             <a href="#">Services</a>
           </li>
-          <li class="py-5 border-t border-gray-200 md:border-0">
+          <li class="py-5 bg-white border-t border-gray-200 md:border-0">
             <a href="#">Nos Tarifs</a>
           </li>
-          <li class="py-5 border-y border-gray-200 md:border-0">
+          <li class="py-5 bg-white border-y border-gray-200 md:border-0">
             <a href="#">Contact</a>
           </li>
         </ul>
 
-        <div class="toggle-menu hidden py-5 text-center md:block">
+        <div
+          class="toggle-menu hidden bg-white py-5 text-center border-b border-gray-200 md:border-0 md:block"
+        >
           <a
-            class="bg-white text-blue-700 m-auto border-gray-200 border-2 p-2 rounded shadow-sm"
+            class="bg-white text-blue-700 mr-5 m-auto border-gray-200 border-2 p-2 rounded shadow-sm"
             href="#"
             >Log in</a
           >
@@ -113,6 +115,32 @@
           class="absolute w-full h-full object-cover object-center"
           src="./ressources/hommeTravail.jpg"
         />
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col gap-4 py-14 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-center sm:py-20"
+    >
+      <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+        10K+ Développeurs déjà convaincus
+      </h1>
+      <p class="max-w-sm mx-auto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+        et?
+      </p>
+      <div class="flex gap-6 justify-center flex-col sm:flex-row">
+        <p class="flex flex-col">
+          <span class="text-3xl font-bold md:text-4xl lg:text-5xl">100%</span>En
+          ligne
+        </p>
+        <p class="flex flex-col">
+          <span class="text-3xl font-bold md:text-4xl lg:text-5xl">24/7</span
+          >Support
+        </p>
+        <p class="flex flex-col">
+          <span class="text-3xl font-bold md:text-4xl lg:text-5xl">100k+</span
+          >Projets
+        </p>
       </div>
     </section>
 
