@@ -9,28 +9,28 @@
   <body>
     <section class="relative">
       <nav
-        class="fixed top-0 h-[5rem] flex flex-col z-20 bg-gray-50 py-5 w-full border-b border-gray-200 md:border-0 md:flex-row md:justify-between md:items-center md:bg-white"
+        class="absolute top-0 h-[5rem] flex flex-col z-20 bg-gray-50 py-5 w-full border-b border-gray-200 md:border-0 md:flex-row md:justify-between md:items-center md:bg-white"
       >
         <div class="flex justify-between px-5">
           <img class="w-10" src="./ressources/RocketLogo.svg" alt="logo" />
 
           <button class="icon-toggle md:hidden">
-            <img class="w-6" src="./ressources/menu.svg" />
+            <img class="w-6" src="./ressources/menu.svg" alt="menu" />
           </button>
         </div>
 
         <ul class="toggle-menu hidden gap-8 text-lg text-center md:flex">
           <li class="py-5 mt-5 bg-white md:mt-0">
-            <a href="#">Accueil</a>
+            <a href="#accueil">Accueil</a>
           </li>
           <li class="py-5 bg-white border-t border-gray-200 md:border-0">
-            <a href="#">Services</a>
+            <a href="#service">Services</a>
           </li>
           <li class="py-5 bg-white border-t border-gray-200 md:border-0">
-            <a href="#">Nos Tarifs</a>
+            <a href="#price">Nos Tarifs</a>
           </li>
           <li class="py-5 bg-white border-y border-gray-200 md:border-0">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
 
@@ -45,7 +45,7 @@
         </div>
       </nav>
 
-      <div class="flex flex-col items-center text-center pt-40">
+      <div id="accueil" class="flex flex-col items-center text-center pt-40">
         <h1 class="flex flex-col text-3xl md:text-5xl lg:text-6xl font-bold">
           <span>FAITES DÉCOLLER VOTRE</span>
           <span class="text-blue-700">BUSINESS EN LIGNE</span>
@@ -66,7 +66,7 @@
 
         <div class="pt-44 pb-10">
           <a
-            href="#"
+            href="#service"
             class="animate-bounce bg-white p-2 w-12 h-12 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center sm:w-16 sm:h-16"
           >
             <svg
@@ -86,6 +86,7 @@
     </section>
 
     <section
+      id="service"
       class="flex flex-col justify-center items-center text-center w-full bg-slate-200 lg:flex-row"
     >
       <div class="flex flex-col order-2 w-1/2 gap-4 py-20 lg:order-1 lg:p-0">
@@ -114,6 +115,7 @@
         <img
           class="absolute w-full h-full object-cover object-center"
           src="./ressources/hommeTravail.jpg"
+          alt="travail"
         />
       </div>
     </section>
@@ -144,14 +146,11 @@
       </div>
     </section>
 
-    <section class="py-16">
+    <section id="price" class="py-16">
       <div class="flex flex-col gap-4 text-center">
-        <h1
-          class="border-b border-black w-fit mx-auto text-5xl font-bold pt-10"
-        >
-          Prices range
-        </h1>
-        <h2 class="mb-10">
+        <h1 class="w-fit mx-auto text-5xl font-bold pt-10">Prices range</h1>
+        <hr class="bloc mx-auto bg-gray-600 h-1 mb-10 w-44" />
+        <h2 class="mb-10 max-w-sm m-auto">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt,
           obcaecati.
         </h2>
@@ -281,18 +280,121 @@
     </section>
 
     <section class="divider-bg flex flex-col items-center py-20 gap-6">
-      <h1 class="text-5xl font-bold">Ces entreprises nous font confiance</h1>
+      <h1 class="font-bold text-center text-3xl md:text-4xl lg:text-5xl">
+        Ces entreprises nous font confiance
+      </h1>
       <div class="flex items-center gap-6">
-        <img class="w-20 h-10" src="./ressources/IBM.png" alt="IBM" />
-        <img class="w-12 h-14" src="./ressources/apple-logo.png" alt="Apple" />
         <img
-          class="w-26 h-14"
+          class="w-16 h-6 sm:w-20 sm:h-10"
+          src="./ressources/IBM.png"
+          alt="IBM"
+        />
+        <img
+          class="w-8 h-10 sm:w-12 sm:h-14"
+          src="./ressources/apple-logo.png"
+          alt="Apple"
+        />
+        <img
+          class="w-22 h-10 sm:w-26 sm:h-14"
           src="./ressources/github-logo.png"
           alt="github"
         />
-        <img class="w-24" src="./ressources/Audi.png" alt="audi" />
+        <img class="w-20 sm:w-24" src="./ressources/Audi.png" alt="audi" />
       </div>
     </section>
+
+    <section
+      id="contact"
+      class="flex flex-col items-center bg-gray-50 pt-10 pb-20"
+    >
+      <h1 class="text-center text-4xl pb-6">Rentrons en contact</h1>
+      <hr class="bloc mx-auto bg-gray-600 h-1 mb-10 w-44" />
+
+      <form
+        class="flex flex-col bg-white gap-4 max-w-3xl mx-auto px-10 py-16 w-full"
+      >
+        <div class="flex flex-col gap-1 w-full md:w-[40rem]">
+          <label>Nom complet</label>
+          <input
+            class="border-2 border-gray-200 p-2 rounded"
+            id="nom"
+            type="text"
+            class=""
+            placeholder="Votre nom"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1 w-full md:w-[40rem]">
+          <label>Prénom</label>
+          <input
+            class="border-2 border-gray-200 p-2 rounded"
+            id="prenom"
+            type="text"
+            placeholder="Votre Prénom"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1 w-full md:w-[40rem]">
+          <label>Votre entreprise</label>
+          <input
+            class="border-2 border-gray-200 p-2 rounded"
+            id="entreprise"
+            type="text"
+            placeholder="Votre entreprise"
+          />
+        </div>
+
+        <div class="flex flex-col gap-1 w-full md:w-[40rem]">
+          <label>Votre message</label>
+          <textarea
+            class="border-2 border-gray-200 p-2 rounded"
+            id="message"
+            type="text"
+            placeholder="Votre message"
+          ></textarea>
+        </div>
+
+        <button class="bg-blue-600 mr-auto py-2 px-10 rounded" type="button">
+          Envoyer
+        </button>
+      </form>
+    </section>
+
+    <footer class="bg-gray-800 py-5">
+      <h3 class="text-3xl pb-5 text-center text-white">Retrouvez-nous ici</h3>
+
+      <div class="mb-5 flex space-x-6 justify-center text-white">
+        <a href="#">
+          <img src="ressources/fb.svg" alt="icône fb" class="w-6" />
+        </a>
+
+        <a href="#">
+          <img
+            src="ressources/instagram.svg"
+            alt="icône instagram"
+            class="w-6"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            src="ressources/githubpetitlogo.svg"
+            alt="icône github"
+            class="w-6"
+          />
+        </a>
+
+        <a href="#">
+          <img src="ressources/twitter.svg" alt="icône twitter" class="w-6" />
+        </a>
+      </div>
+
+      <hr class="w-36 mx-auto mb-5" />
+
+      <p class="text-center mt-8 text-base text-gray-400 md:mt-0">
+        &copy; 2022 SEOTOOL, TOUS DROITS RÉSERVÉS
+      </p>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>
