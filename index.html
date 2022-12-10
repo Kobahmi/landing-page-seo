@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tailwind CSS website from scratch" />
     <title>Landing page SEO</title>
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
@@ -65,8 +66,7 @@
         </div>
 
         <div class="pt-44 pb-10">
-          <a
-            href="#service"
+          <div
             class="animate-bounce bg-white p-2 w-12 h-12 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center sm:w-16 sm:h-16"
           >
             <svg
@@ -80,7 +80,7 @@
             >
               <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -289,11 +289,7 @@
           src="./ressources/IBM.png"
           alt="IBM"
         />
-        <img
-          class="w-8 h-10 sm:w-12 sm:h-14"
-          src="./ressources/apple-logo.png"
-          alt="Apple"
-        />
+
         <img
           class="w-22 h-10 sm:w-26 sm:h-14"
           src="./ressources/github-logo.png"
@@ -354,14 +350,18 @@
           ></textarea>
         </div>
 
-        <button class="bg-blue-600 mr-auto py-2 px-10 rounded" type="button">
+        <button
+          id="send"
+          class="bg-blue-600 mr-auto py-2 px-10 rounded text-white"
+          type="button"
+        >
           Envoyer
         </button>
       </form>
     </section>
 
     <footer class="bg-gray-800 py-5">
-      <h3 class="text-3xl pb-5 text-center text-white">Retrouvez-nous ici</h3>
+      <h1 class="text-3xl pb-5 text-center text-white">Retrouvez-nous ici</h1>
 
       <div class="mb-5 flex space-x-6 justify-center text-white">
         <a href="#">
